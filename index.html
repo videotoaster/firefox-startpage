@@ -10,8 +10,8 @@
     timeHeader = document.getElementById("time-header");
     window.setInterval(function(){
       currentTime = new Date();
-      timestring = currentDate.getHours().toString() + ":" + currentDate.getMinutes().toString() + ":" + currentDate.getSeconds().toString();
-      timeDisplay.innerHTML = timestring;
+      timeString = currentTime.getHours().toString() + ":" + currentTime.getMinutes().toString() + ":" + currentTime.getSeconds().toString();
+      timeDisplay.innerHTML = timeString;
     },1000);
     timeHeader.style.display = "block";
    }
