@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>New Tab</title>
+  <link rel="stylesheet" href="https://newcss.net/new.css">
+  <link rel="stylesheet" href="https://newcss.net/theme/night.css">
+  <script>
+   window.onload = function(){
+    timeDisplay = document.getElementById("time-display");
+    timeHeader = document.getElementById("time-header");
+    window.setInterval(function(){
+      currentTime = new Date();
+      timestring = currentDate.getHours().toString() + ":" + currentDate.getMinutes().toString() + ":" + currentDate.getSeconds().toString();
+      timeDisplay.innerHTML = timestring;
+    },1000);
+    timeHeader.style.display = "block";
+   }
+  </script>
+ </head>
+ <body>
+  <header style="text-align:center;">
+   <form action="https://duckduckgo.com/" method="GET">
+    <input type="text" name="q" placeholder="Search the web..." /><input type="submit" />
+   </form>
+  </header>
+  <div style="text-align:center;">
+   <h1 id="time-header" style="display:none;"><span id="time-display"></span></h1>
+  </div>
+ </body>
+</html>
